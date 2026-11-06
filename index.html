@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home · CampusPulse</title><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet"></head><body data-page="home"><header class="nav"><a href="index.html" class="logo">Campus<span>Pulse</span></a><nav><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="news.html">News</a><a href="opportunities.html">Opportunities</a><a href="bookmarks.html">Saved <b id="bmCount">0</b></a></nav></header><main>
+<section class="hero"><p class="tag">For every student · every field</p><h1>Your campus,<br><em>personalized.</em></h1><p>News, internships, scholarships, courses and competitions — filtered for your field, branch and interests.</p><a href="#profile" class="btn">Create your profile ↓</a></section>
+<section class="flow"><div><b>1</b>Create profile<small>Field · Branch · Year · Interests</small></div><div><b>2</b>Select branch<small>CSE, IT, AI/ML, ECE…</small></div><div><b>3</b>Personal dashboard<small>Branch-specific updates</small></div><div><b>4</b>Stay updated<small>Deadlines, events, resources</small></div></section>
+<section id="profile" class="card form"><h2>Student profile</h2>
+<form id="profileForm">
+<label>Name<input name="name" required placeholder="e.g. Om Sharma"></label>
+<label>Field<select name="field" id="fieldSel" required></select></label>
+<label>Branch<select name="branch" id="branchSel" required></select></label>
+<label>Year<select name="year"><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option><option>Postgraduate</option></select></label>
+<fieldset><legend>Interests</legend><div id="interestBox" class="chips"></div></fieldset>
+<label>Skills<input name="skills" placeholder="Python, Design, Public speaking"></label>
+<button class="btn" type="submit">Save & open dashboard →</button></form></section>
+</main><footer>CampusPulse — student news & opportunities in one place.</footer><script src="data.js"></script><script src="app.js"></script></body></html>
